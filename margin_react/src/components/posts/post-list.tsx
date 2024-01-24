@@ -23,9 +23,7 @@ export default function PostList({
     queryKey: ["posts"],
     queryFn: () =>
       axios
-        .get(
-          "https://palace-poker.hu/ujadmin/wp-json/wp/v2/posts?_embed&category=20,30",
-        )
+        .get("https://palace-poker.hu/ujadmin/wp-json/wp/v2/posts?_embed")
         .then((res) => res.data),
   });
 
