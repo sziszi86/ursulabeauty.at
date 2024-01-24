@@ -42,7 +42,7 @@ function App() {
               <Route path="/seo-agency" element={<HomeSEOAgency />} />
               <Route path="/consulting" element={<HomeConsulting />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/versenyek" element={<Blog />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/single-post/:postId" element={<SinglePost />} />
               <Route path="/single-project" element={<SingleProject />} />
               <Route path="/about" element={<About />} />

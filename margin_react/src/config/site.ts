@@ -12,7 +12,7 @@ export const mainNav = [
   },
   {
     title: "Versenyek",
-    href: "/versenyek",
+    href: "/blog",
   },
   {
     title: "Rólunk",
