@@ -8,6 +8,7 @@ export const siteConfig = {
 export const mainNav = [
   {
     title: "Home",
+    href: "/blog",
     items: [
       {
         title: "Home Marketing",

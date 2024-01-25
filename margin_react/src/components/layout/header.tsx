@@ -1,34 +1,41 @@
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import SiteLogo from "./site-logo";
-import MainNav from "./main-nav"
-import { DarkModeSwitch } from "../dark-mode-switch"
-import { mainNav } from "../../config/site"
-import { cn } from "../../lib/utils"
-import { MobileNav } from "./mobile-nav"
+import MainNav from "./main-nav";
+import { DarkModeSwitch } from "../dark-mode-switch";
+import { mainNav } from "@/config/site.ts";
+import { cn } from "@/lib/utils.ts";
+import { MobileNav } from "./mobile-nav";
 
 const Header = () => {
-  const [stickyClass, setStickyClass] = useState("")
+  const [stickyClass, setStickyClass] = useState("");
 
   useEffect(() => {
-    window.addEventListener("scroll", stickyHeader)
+    window.addEventListener("scroll", stickyHeader);
 
     return () => {
-      window.removeEventListener("scroll", stickyHeader)
-    }
-  }, [])
+      window.removeEventListener("scroll", stickyHeader);
+    };
+  }, []);
 
   const stickyHeader = () => {
     if (window !== undefined) {
-      let windowHeight = window.scrollY
-      windowHeight > 10 ? setStickyClass("bg-white dark:bg-slate-900 lg:py-3 py-3") : setStickyClass("")
+      let windowHeight = window.scrollY;
+      windowHeight > 10
+        ? setStickyClass("bg-white dark:bg-slate-900 lg:py-3 py-3")
+        : setStickyClass("");
     }
-  }
+  };
 
   return (
     <>
       <header className="fixed top-0 z-20 w-full">
-        <div className={cn("flex items-center px-4 py-5 transition-all lg:py-12 xl:px-20", stickyClass)}>
+        <div
+          className={cn(
+            "flex items-center px-4 py-5 transition-all lg:py-12 xl:px-20",
+            stickyClass,
+          )}
+        >
           <Link to="/" className="mr-12 shrink-0">
             <SiteLogo
               width={123}
@@ -43,10 +50,10 @@ const Header = () => {
             <DarkModeSwitch />
             <MobileNav mainNavItems={mainNav} />
 
-            <div className="hidden lg:ml-auto lg:inline-block gap-x-3">
+            <div className="hidden gap-x-3 lg:ml-auto lg:inline-block">
               <a
-                  href="#"
-                  className="inline-block rounded-md bg-green from-primary to-tertiary px-4 py-2.5 text-center font-bold text-white mr-3"
+                href="#"
+                className="mr-3 inline-block rounded-md bg-green from-primary to-tertiary px-4 py-2.5 text-center font-bold text-white"
               >
                 <span className="block text-xxs">Játékosvédelmi zöld szám</span>
                 <span className="text-sm">+36 80 205 352</span>
@@ -63,7 +70,7 @@ const Header = () => {
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
