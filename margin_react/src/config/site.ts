@@ -13,22 +13,27 @@ export const mainNav = [
   {
     title: "Versenyek",
     href: "/blog",
+    external: false,
   },
   {
     title: "Rólunk",
     href: "/about",
+    external: false,
   },
   {
     title: "Galéria",
     href: "/services",
+    external: false,
   },
   {
     title: "Adatvédelmi tájoztató",
     href: "/pricing",
+    external: false,
   },
   {
     title: "Kapcsolat",
     href: "/contact",
+    external: false,
   },
 ] satisfies MainNavItem[];
 
