@@ -58,7 +58,7 @@ export const footerNav = [
       },
       {
         title: "Blog",
-        href: "/posts",
+        href: "/blog",
         external: false,
       },
       {
