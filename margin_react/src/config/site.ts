@@ -7,13 +7,28 @@ export const siteConfig = {
 
 export const mainNav = [
   {
-    title: "Főoldal",
-    href: "/",
+    title: "Home",
+    items: [
+      {
+        title: "Home Marketing",
+        href: "/",
+        items: [],
+      },
+      {
+        title: "Home SEO Agency",
+        href: "/seo-agency",
+        items: [],
+      },
+      {
+        title: "Home Consulting",
+        href: "/consulting",
+        items: [],
+      },
+    ],
   },
   {
     title: "Versenyek",
     href: "/blog",
-    external: false,
   },
   {
     title: "Rólunk",
