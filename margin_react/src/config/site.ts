@@ -21,7 +21,7 @@ export const mainNav = [
       },
       {
         title: "Home Consulting",
-        href: "/consulting",
+        href: "/blog",
         items: [],
       },
     ],
