@@ -16,5 +16,4 @@ const Blog = useFramerTransition(
     </main>
   </>,
 );
-
 export default Blog;
