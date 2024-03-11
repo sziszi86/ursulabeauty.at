@@ -11,6 +11,7 @@ const PostCard = ({ post }: Props) => {
 
   return (
     <article
+      id={"test"}
       className="hover-shadow overflow-hidden rounded-lg bg-white dark:bg-slate-850"
       itemType="https://schema.org/Article"
     >
@@ -54,9 +55,9 @@ const PostCard = ({ post }: Props) => {
           </>
         )}
 
-        {post?.excerpt?.rendered && (
+        {post?.content?.rendered && (
           <div
-            dangerouslySetInnerHTML={{ __html: post?.excerpt?.rendered }}
+            dangerouslySetInnerHTML={{ __html: post?.content?.rendered }}
           ></div>
         )}
       </div>
