@@ -1,48 +1,45 @@
-import Head from "next/head";
-import { Fragment, useEffect } from "react";
-import niceSelect from "react-nice-select";
-import ImageView from "../components/ImageView";
-import VideoPopup from "../components/VideoPopup";
-import { animation } from "../utils";
-import Footer from "./Footer";
-import Header from "./Header";
-import ScrollTop from "./ScrollTop";
+import Head from 'next/head'
+import { Fragment, useEffect } from 'react'
+import niceSelect from 'react-nice-select'
+import ImageView from '../components/ImageView'
+import VideoPopup from '../components/VideoPopup'
+import { animation } from '../utils'
+import Footer from './Footer'
+import Header from './Header'
+import ScrollTop from './ScrollTop'
+import Link from 'next/link'
+
 const Layout = ({
   pageName,
   children,
   header,
   noSidebar,
   noFooter,
-  noHeader,
+  noHeader
 }) => {
   useEffect(() => {
-    animation();
+    animation()
     return () => {
-      niceSelect();
-    };
-  }, []);
+      niceSelect()
+    }
+  }, [])
 
   return (
     <Fragment>
       <Head>
         {/* <!--====== Title ======--> */}
-        <title>Lezar - Beauty Salon React NextJS Template || {pageName}</title>
+        <title>Ursula Beaty - Beauty Nail Salon || {pageName}</title>
         {/* <!--====== Favicon Icon ======--> */}
-        <link
-          rel="shortcut icon"
-          href="assets/images/favicon.png"
-          type="image/x-icon"
-        />
         {/* <!--====== Google Fonts ======--> */}
 
-        <link
-          href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
+        <Link
+          href='https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap'
+          rel='stylesheet'
         />
-      </Head>{" "}
+      </Head>{' '}
       <VideoPopup />
       <ImageView />
-      <div className="page-wrapper">
+      <div className='page-wrapper'>
         {/* main header */}
         {!noHeader && <Header header={header} />}
         {children}
@@ -52,6 +49,6 @@ const Layout = ({
       </div>
       <ScrollTop />
     </Fragment>
-  );
-};
-export default Layout;
+  )
+}
+export default Layout

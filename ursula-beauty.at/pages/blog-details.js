@@ -1,35 +1,36 @@
-import Link from "next/link";
-import Layout from "../src/layout/Layout";
-import PageBanner from "../src/layout/PageBanner";
+import Link from 'next/link'
+import Layout from '../src/layout/Layout'
+import PageBanner from '../src/layout/PageBanner'
+
 const BlogDetails = () => {
   return (
-    <Layout pageName={"Blog Details"}>
-      <PageBanner pageName={"Blog Details"} textAlign={"center"} />
+    <Layout pageName={'Blog Details'}>
+      <PageBanner pageName={'Blog Details'} textAlign={'center'} />
 
       {/* Blog Details Start */}
-      <section className="blog-details-area py-150 rpy-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <div className="blog-list-item blog-details-content">
-                <div className="image wow fadeInUp delay-0-2s">
-                  <img src="assets/images/news/blog-list1.jpg" alt="blog" />
+      <section className='blog-details-area py-150 rpy-100'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-8'>
+              <div className='blog-list-item blog-details-content'>
+                <div className='image wow fadeInUp delay-0-2s'>
+                  <img src='assets/images/news/blog-list1.jpg' alt='blog' />
                 </div>
-                <div className="blog-list-content wow fadeInUp delay-0-4s">
+                <div className='blog-list-content wow fadeInUp delay-0-4s'>
                   <ul>
                     <li>
-                      <a href="#">
-                        <i className="far fa-calendar-alt" /> 25 Jan 2022
+                      <a href='#'>
+                        <i className='far fa-calendar-alt' /> 25 Jan 2022
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="far fa-comments" /> Comments (05)
+                      <a href='#'>
+                        <i className='far fa-comments' /> Comments (05)
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="far fa-share-square" /> Share (26)
+                      <a href='#'>
+                        <i className='far fa-share-square' /> Share (26)
                       </a>
                     </li>
                   </ul>
@@ -54,8 +55,8 @@ const BlogDetails = () => {
                     esse quam nihil molestiae consequatur vel illum qui dolorem
                   </p>
                   <img
-                    src="assets/images/news/blog-details-middle.jpg"
-                    alt="Blog"
+                    src='assets/images/news/blog-details-middle.jpg'
+                    alt='Blog'
                   />
                   <h5>Why Need Beauty {`&amp;`} Spa Treatments ? </h5>
                   <p>
@@ -71,245 +72,245 @@ const BlogDetails = () => {
                     {`"On the other hand denounce righteous indignation and
                     dislike men who are so beguiled and demoralized by the
                     charms of pleasure the momen blinded"`}
-                    <span className="name">Somalia D. Silva</span>
+                    <span className='name'>Somalia D. Silva</span>
                   </blockquote>
-                  <hr className="mt-40" />
-                  <div className="tag-share py-20 wow fadeInUp delay-0-2s">
-                    <div className="tags mb-5">
+                  <hr className='mt-40' />
+                  <div className='tag-share py-20 wow fadeInUp delay-0-2s'>
+                    <div className='tags mb-5'>
                       <h5>Popular Tags : </h5>
-                      <a href="#">Beauty</a>
-                      <a href="#">Spa</a>
-                      <a href="#">Salon</a>
+                      <a href='#'>Beauty</a>
+                      <a href='#'>Spa</a>
+                      <a href='#'>Salon</a>
                     </div>
-                    <div className="share">
+                    <div className='share'>
                       <h5>Share Now : </h5>
-                      <div className="social-style-three">
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
+                      <div className='social-style-three'>
+                        <a href='#'>
+                          <i className='fab fa-facebook-f' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
+                        <a href='#'>
+                          <i className='fab fa-twitter' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in" />
+                        <a href='#'>
+                          <i className='fab fa-linkedin-in' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-instagram" />
+                        <a href='#'>
+                          <i className='fab fa-instagram' />
                         </a>
                       </div>
                     </div>
                   </div>
                   <hr />
-                  <div className="comment-item admin-comment mt-50 wow fadeInUp delay-0-4s">
-                    <div className="author-image">
+                  <div className='comment-item admin-comment mt-50 wow fadeInUp delay-0-4s'>
+                    <div className='author-image'>
                       <img
-                        src="assets/images/news/admin-comment.jpg"
-                        alt="Author"
+                        src='assets/images/news/admin-comment.jpg'
+                        alt='Author'
                       />
                     </div>
-                    <div className="comment-details">
-                      <h6 className="name">Somalia D. Silva</h6>
+                    <div className='comment-details'>
+                      <h6 className='name'>Somalia D. Silva</h6>
                       <p>
                         At voeos accusamus iusto odiodignissimos ducim uiblande
                         praesentium volutatum deleniti atque corrute quos
                       </p>
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
+                      <div className='social-style-two'>
+                        <a href='#'>
+                          <i className='fab fa-facebook-f' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
+                        <a href='#'>
+                          <i className='fab fa-twitter' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-instagram" />
+                        <a href='#'>
+                          <i className='fab fa-instagram' />
                         </a>
-                        <a href="#">
-                          <i className="fab fa-behance" />
+                        <a href='#'>
+                          <i className='fab fa-behance' />
                         </a>
                       </div>
                     </div>
                   </div>
-                  <h5 className="next-prev-title mt-55">Related Post</h5>
-                  <div className="next-prev-service mt-30 mb-55">
-                    <div className="nps-item prev-item wow fadeInLeft delay-0-2s">
-                      <Link href="/blog-details">
+                  <h5 className='next-prev-title mt-55'>Related Post</h5>
+                  <div className='next-prev-service mt-30 mb-55'>
+                    <div className='nps-item prev-item wow fadeInLeft delay-0-2s'>
+                      <Link legacyBehavior href='/blog-details'>
                         <a>
                           <img
-                            src="assets/images/services/prev.jpg"
-                            alt="Servce"
+                            src='assets/images/services/prev.jpg'
+                            alt='Servce'
                           />
                         </a>
                       </Link>
-                      <div className="nps-content">
+                      <div className='nps-content'>
                         <h6>
-                          <Link href="/blog-details">
+                          <Link legacyBehavior href='/blog-details'>
                             <a>Spa {`&amp;`} Foot Massage</a>
                           </Link>
                         </h6>
                         <span>Beauty Treatments</span>
-                        <Link href="/blog-details">
-                          <a className="read-more">
-                            read more{" "}
-                            <i className="fas fa-long-arrow-alt-right" />
+                        <Link legacyBehavior href='/blog-details'>
+                          <a className='read-more'>
+                            read more{' '}
+                            <i className='fas fa-long-arrow-alt-right' />
                           </a>
                         </Link>
                       </div>
                     </div>
-                    <div className="nps-item next-item wow fadeInRight delay-0-2s">
-                      <div className="nps-content">
+                    <div className='nps-item next-item wow fadeInRight delay-0-2s'>
+                      <div className='nps-content'>
                         <h6>
-                          <Link href="/blog-details">
+                          <Link legacyBehavior href='/blog-details'>
                             <a>Hair {`&amp;`} Nail Polish</a>
                           </Link>
                         </h6>
                         <span>Beauty Treatments</span>
-                        <Link href="/blog-details">
-                          <a className="read-more">
-                            read more{" "}
-                            <i className="fas fa-long-arrow-alt-right" />
+                        <Link legacyBehavior href='/blog-details'>
+                          <a className='read-more'>
+                            read more{' '}
+                            <i className='fas fa-long-arrow-alt-right' />
                           </a>
                         </Link>
                       </div>
-                      <Link href="/blog-details">
+                      <Link legacyBehavior href='/blog-details'>
                         <a>
                           <img
-                            src="assets/images/services/next.jpg"
-                            alt="Servce"
+                            src='assets/images/services/next.jpg'
+                            alt='Servce'
                           />
                         </a>
                       </Link>
                     </div>
                   </div>
                   <hr />
-                  <h3 className="comments-title mt-40">Comments</h3>
-                  <div className="comments-wrap mb-30">
-                    <div className="comment-item wow fadeInUp delay-0-2s">
-                      <div className="author-image">
+                  <h3 className='comments-title mt-40'>Comments</h3>
+                  <div className='comments-wrap mb-30'>
+                    <div className='comment-item wow fadeInUp delay-0-2s'>
+                      <div className='author-image'>
                         <img
-                          src="assets/images/news/comment-author-1.jpg"
-                          alt="Author"
+                          src='assets/images/news/comment-author-1.jpg'
+                          alt='Author'
                         />
                       </div>
-                      <div className="comment-details">
-                        <div className="name-date">
-                          <b className="name">Modela D. Silva</b> /
-                          <span className="date">25 Jan 2022</span>
+                      <div className='comment-details'>
+                        <div className='name-date'>
+                          <b className='name'>Modela D. Silva</b> /
+                          <span className='date'>25 Jan 2022</span>
                         </div>
                         <p>
                           Sed ut perspiciatis unde omnis iste natus error sit
                           voluptatem accusantium doloremque laudantium totam rem
                         </p>
-                        <a href="#" className="read-more">
-                          Reply <i className="fas fa-long-arrow-alt-right" />
+                        <a href='#' className='read-more'>
+                          Reply <i className='fas fa-long-arrow-alt-right' />
                         </a>
                       </div>
                     </div>
-                    <div className="comment-item child-comment wow fadeInUp delay-0-4s">
-                      <div className="author-image">
+                    <div className='comment-item child-comment wow fadeInUp delay-0-4s'>
+                      <div className='author-image'>
                         <img
-                          src="assets/images/news/comment-author-2.jpg"
-                          alt="Author"
+                          src='assets/images/news/comment-author-2.jpg'
+                          alt='Author'
                         />
                       </div>
-                      <div className="comment-details">
-                        <div className="name-date">
-                          <b className="name">Modela D. Silva</b> /
-                          <span className="date">25 Jan 2022</span>
+                      <div className='comment-details'>
+                        <div className='name-date'>
+                          <b className='name'>Modela D. Silva</b> /
+                          <span className='date'>25 Jan 2022</span>
                         </div>
                         <p>
                           Sed ut perspiciatis unde omnis iste natus error sit
                           voluptatem accusantium doloremque laudantium totam rem
                         </p>
-                        <a href="#" className="read-more">
-                          Reply <i className="fas fa-long-arrow-alt-right" />
+                        <a href='#' className='read-more'>
+                          Reply <i className='fas fa-long-arrow-alt-right' />
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="comment-form mt-80 wow fadeInUp delay-0-2s">
-                <h3 className="comment-form-title mb-0">Send Us Comments</h3>
+              <div className='comment-form mt-80 wow fadeInUp delay-0-2s'>
+                <h3 className='comment-form-title mb-0'>Send Us Comments</h3>
                 <p>Leave your valuable replay about our projects</p>
                 <form
                   onClick={(e) => e.preventDefault()}
-                  action="#"
-                  className="comment-from mt-35"
+                  action='#'
+                  className='comment-from mt-35'
                 >
-                  <div className="row clearfix">
-                    <div className="col-sm-6">
-                      <div className="form-group">
-                        <label htmlFor="name">
-                          <i className="far fa-user" />
+                  <div className='row clearfix'>
+                    <div className='col-sm-6'>
+                      <div className='form-group'>
+                        <label htmlFor='name'>
+                          <i className='far fa-user' />
                         </label>
                         <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="form-control"
-                          placeholder="Full Name"
+                          type='text'
+                          id='name'
+                          name='name'
+                          className='form-control'
+                          placeholder='Full Name'
                         />
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="form-group">
-                        <label htmlFor="number">
-                          <i className="fas fa-phone" />
+                    <div className='col-sm-6'>
+                      <div className='form-group'>
+                        <label htmlFor='number'>
+                          <i className='fas fa-phone' />
                         </label>
                         <input
-                          type="text"
-                          id="number"
-                          name="number"
-                          className="form-control"
-                          placeholder="Phone Number"
+                          type='text'
+                          id='number'
+                          name='number'
+                          className='form-control'
+                          placeholder='Phone Number'
                         />
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="form-group">
-                        <label htmlFor="email">
-                          <i className="far fa-envelope" />
+                    <div className='col-sm-6'>
+                      <div className='form-group'>
+                        <label htmlFor='email'>
+                          <i className='far fa-envelope' />
                         </label>
                         <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          className="form-control"
-                          placeholder="Email Us"
-                          required=""
+                          type='email'
+                          id='email'
+                          name='email'
+                          className='form-control'
+                          placeholder='Email Us'
+                          required=''
                         />
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="form-group">
+                    <div className='col-sm-6'>
+                      <div className='form-group'>
                         <input
-                          type="text"
-                          id="website"
-                          name="website"
-                          className="form-control"
-                          placeholder="Website"
+                          type='text'
+                          id='website'
+                          name='website'
+                          className='form-control'
+                          placeholder='Website'
                         />
                       </div>
                     </div>
-                    <div className="col-sm-12">
-                      <div className="form-group">
+                    <div className='col-sm-12'>
+                      <div className='form-group'>
                         <textarea
                           rows={5}
-                          className="form-control"
-                          placeholder="Write Comments"
-                          required=""
-                          defaultValue={""}
+                          className='form-control'
+                          placeholder='Write Comments'
+                          required=''
+                          defaultValue={''}
                         />
                       </div>
                     </div>
-                    <div className="col-lg-12">
-                      <div className="form-group mb-0">
+                    <div className='col-lg-12'>
+                      <div className='form-group mb-0'>
                         <button
-                          type="submit"
-                          className="theme-btn w-100 style-six"
+                          type='submit'
+                          className='theme-btn w-100 style-six'
                         >
-                          send comments{" "}
-                          <i className="fas fa-long-arrow-alt-right" />
+                          send comments{' '}
+                          <i className='fas fa-long-arrow-alt-right' />
                         </button>
                       </div>
                     </div>
@@ -317,227 +318,227 @@ const BlogDetails = () => {
                 </form>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="blog-sidebar rmt-75">
-                <div className="widget about-widget wow fadeInUp delay-0-2s">
+            <div className='col-lg-4'>
+              <div className='blog-sidebar rmt-75'>
+                <div className='widget about-widget wow fadeInUp delay-0-2s'>
                   <img
-                    src="assets/images/widgets/about-author.jpg"
-                    alt="Author"
+                    src='assets/images/widgets/about-author.jpg'
+                    alt='Author'
                   />
-                  <div className="about-widget-content">
+                  <div className='about-widget-content'>
                     <h5>Somalia D. Silva</h5>
                     <p>
                       {`"On the other hand, we denounce with righteous indignation
                       and dislike men who beguiled"`}
                     </p>
-                    <div className="social-style-three">
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
+                    <div className='social-style-three'>
+                      <a href='#'>
+                        <i className='fab fa-facebook-f' />
                       </a>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
+                      <a href='#'>
+                        <i className='fab fa-twitter' />
                       </a>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in" />
+                      <a href='#'>
+                        <i className='fab fa-linkedin-in' />
                       </a>
-                      <a href="#">
-                        <i className="fab fa-instagram" />
+                      <a href='#'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="widget search-widget wow fadeInUp delay-0-2s">
-                  <form onClick={(e) => e.preventDefault()} action="#">
+                <div className='widget search-widget wow fadeInUp delay-0-2s'>
+                  <form onClick={(e) => e.preventDefault()} action='#'>
                     <input
-                      type="search"
-                      placeholder="Search here"
-                      required=""
+                      type='search'
+                      placeholder='Search here'
+                      required=''
                     />
-                    <button type="submit">
-                      <i className="fas fa-search" />
+                    <button type='submit'>
+                      <i className='fas fa-search' />
                     </button>
                   </form>
                 </div>
-                <div className="widget category-widget wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Category</h5>
+                <div className='widget category-widget wow fadeInUp delay-0-2s'>
+                  <h5 className='widget-title'>Category</h5>
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Beauty {`&amp;`} Spa <span>(2)</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Body Treatments <span>(9)</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Hair Cutting {`&amp;`} Colors <span>(8)</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Spa {`&amp;`} Foot Massage <span>(4)</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Nail {`&amp;`} Brow Polish <span>(3)</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href='#'>
                         Eye Treatments <span>(0)</span>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div className="widget blog-widget wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Recent News</h5>
-                  <div className="widget-post-wrap">
-                    <div className="widget-post-item">
+                <div className='widget blog-widget wow fadeInUp delay-0-2s'>
+                  <h5 className='widget-title'>Recent News</h5>
+                  <div className='widget-post-wrap'>
+                    <div className='widget-post-item'>
                       <img
-                        src="assets/images/widgets/blog1.jpg"
-                        alt="Recent Post"
+                        src='assets/images/widgets/blog1.jpg'
+                        alt='Recent Post'
                       />
-                      <div className="widget-post-content">
-                        <span className="posted-on">
-                          <i className="far fa-calendar-alt" />{" "}
-                          <a href="#">25 march 2022</a>
+                      <div className='widget-post-content'>
+                        <span className='posted-on'>
+                          <i className='far fa-calendar-alt' />{' '}
+                          <a href='#'>25 march 2022</a>
                         </span>
                         <h6>
-                          <Link href="/blog-details">
+                          <Link legacyBehavior href='/blog-details'>
                             <a>Useful React Hooks That You Can Projects</a>
                           </Link>
                         </h6>
-                        <a href="#" className="read-more">
-                          read more{" "}
-                          <i className="fas fa-long-arrow-alt-right" />
+                        <a href='#' className='read-more'>
+                          read more{' '}
+                          <i className='fas fa-long-arrow-alt-right' />
                         </a>
                       </div>
                     </div>
-                    <div className="widget-post-item">
+                    <div className='widget-post-item'>
                       <img
-                        src="assets/images/widgets/blog2.jpg"
-                        alt="Recent Post"
+                        src='assets/images/widgets/blog2.jpg'
+                        alt='Recent Post'
                       />
-                      <div className="widget-post-content">
-                        <span className="posted-on">
-                          <i className="far fa-calendar-alt" />{" "}
-                          <a href="#">25 march 2022</a>
+                      <div className='widget-post-content'>
+                        <span className='posted-on'>
+                          <i className='far fa-calendar-alt' />{' '}
+                          <a href='#'>25 march 2022</a>
                         </span>
                         <h6>
-                          <Link href="/blog-details">
+                          <Link legacyBehavior href='/blog-details'>
                             <a>Useful React Hooks That You Can Projects</a>
                           </Link>
                         </h6>
-                        <a href="#" className="read-more">
-                          read more{" "}
-                          <i className="fas fa-long-arrow-alt-right" />
+                        <a href='#' className='read-more'>
+                          read more{' '}
+                          <i className='fas fa-long-arrow-alt-right' />
                         </a>
                       </div>
                     </div>
-                    <div className="widget-post-item">
+                    <div className='widget-post-item'>
                       <img
-                        src="assets/images/widgets/blog3.jpg"
-                        alt="Recent Post"
+                        src='assets/images/widgets/blog3.jpg'
+                        alt='Recent Post'
                       />
-                      <div className="widget-post-content">
-                        <span className="posted-on">
-                          <i className="far fa-calendar-alt" />{" "}
-                          <a href="#">25 march 2022</a>
+                      <div className='widget-post-content'>
+                        <span className='posted-on'>
+                          <i className='far fa-calendar-alt' />{' '}
+                          <a href='#'>25 march 2022</a>
                         </span>
                         <h6>
-                          <Link href="/blog-details">
+                          <Link legacyBehavior href='/blog-details'>
                             <a>Useful React Hooks That You Can Projects</a>
                           </Link>
                         </h6>
-                        <a href="#" className="read-more">
-                          read more{" "}
-                          <i className="fas fa-long-arrow-alt-right" />
+                        <a href='#' className='read-more'>
+                          read more{' '}
+                          <i className='fas fa-long-arrow-alt-right' />
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="widget gallery-widget wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Photo Gallery</h5>
-                  <div className="gallery-widget-wrap">
-                    <div className="widget-gallery-item">
+                <div className='widget gallery-widget wow fadeInUp delay-0-2s'>
+                  <h5 className='widget-title'>Photo Gallery</h5>
+                  <div className='gallery-widget-wrap'>
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery1.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery1.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery1.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery1.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
-                    <div className="widget-gallery-item">
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery2.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery2.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery2.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery2.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
-                    <div className="widget-gallery-item">
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery3.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery3.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery3.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery3.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
-                    <div className="widget-gallery-item">
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery4.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery4.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery4.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery4.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
-                    <div className="widget-gallery-item">
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery5.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery5.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery5.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery5.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
-                    <div className="widget-gallery-item">
+                    <div className='widget-gallery-item'>
                       <img
-                        src="assets/images/widgets/gallery6.jpg"
-                        alt="Gallery"
+                        src='assets/images/widgets/gallery6.jpg'
+                        alt='Gallery'
                       />
-                      <a href="assets/images/widgets/gallery6.jpg">
-                        <i className="fab fa-instagram" />
+                      <a href='assets/images/widgets/gallery6.jpg'>
+                        <i className='fab fa-instagram' />
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="widget tag-cloud-widget wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Popular Tags</h5>
-                  <div className="tag-clouds">
-                    <a href="#">Beauty</a>
-                    <a href="#">Spa</a>
-                    <a href="#">Treatment</a>
-                    <a href="#">Nature</a>
-                    <a href="#">Skin Care</a>
-                    <a href="#">Cye Care</a>
-                    <a href="#">Colors</a>
+                <div className='widget tag-cloud-widget wow fadeInUp delay-0-2s'>
+                  <h5 className='widget-title'>Popular Tags</h5>
+                  <div className='tag-clouds'>
+                    <a href='#'>Beauty</a>
+                    <a href='#'>Spa</a>
+                    <a href='#'>Treatment</a>
+                    <a href='#'>Nature</a>
+                    <a href='#'>Skin Care</a>
+                    <a href='#'>Cye Care</a>
+                    <a href='#'>Colors</a>
                   </div>
                 </div>
-                <div className="widget product-add-widget wow fadeInUp delay-0-2s">
-                  <div className="product-add-content text-white">
+                <div className='widget product-add-widget wow fadeInUp delay-0-2s'>
+                  <div className='product-add-content text-white'>
                     <h3>Need Beauty {`&amp;`} Spa Products</h3>
                     <p>Quis autem vel eum reprehe nderit quin voluptate</p>
-                    <a href="#" className="theme-btn style-two">
-                      shop now <i className="fas fa-long-arrow-alt-right" />
+                    <a href='#' className='theme-btn style-two'>
+                      shop now <i className='fas fa-long-arrow-alt-right' />
                     </a>
                   </div>
                 </div>
@@ -548,6 +549,6 @@ const BlogDetails = () => {
       </section>
       {/* Blog Details End */}
     </Layout>
-  );
-};
-export default BlogDetails;
+  )
+}
+export default BlogDetails

@@ -1,39 +1,74 @@
 import { useParams } from "react-router-dom";
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+
+// Post típus definíciója (összhangban a PostList.tsx-szel)
+interface Post {
+  id: number;
+  title: { rendered: string };
+  content: { rendered: string };
+  excerpt?: { rendered: string };
+  custom_fields?: { "at-expiration"?: string };
+  better_featured_image?: {
+    source_url: string;
+    alt_text?: string;
+    media_details?: {
+      sizes?: { medium?: { source_url: string } };
+      width: number;
+      height: number;
+      source_url?: string;
+    };
+  };
+  categories?: { id: number; name: string }[];
+  modified: string;
+  slug: string;
+}
 
 type SinglePostProps = {
-    postId: string;
+  postId: string;
 };
 
 const SinglePost = ({ postId }: SinglePostProps) => {
-    const { isPending, error, data: post } = useQuery({
-        queryKey: ['post', postId],
-        queryFn: () =>
-            axios
-                .get(`https://palace-poker.hu/ujadmin/wp-json/wp/v2/posts/${postId}`)
-                .then((res) => res.data),
-    });
+  const {
+    isPending,
+    error,
+    data: post,
+  } = useQuery<Post>({
+    queryKey: ["post", postId],
+    queryFn: async () => {
+      const response = await axios.get(
+        `/wp-json/wp/v2/posts/${postId}`, // Proxyzott URL a vite.config.ts alapján
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
+      );
+      return response.data;
+    },
+  });
 
-    if (isPending) return <p>Loading...</p>;
+  if (isPending) return <p>Loading...</p>;
 
-    if (error) return <p>Error: {error.message}</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
-    if (!post) return <p>Post not found</p>;
+  if (!post) return <p>Post not found</p>;
 
-    return (
-        <div>
-            <h1>{post.title.rendered}</h1>
-            <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-        </div>
-    );
+  return (
+    <div>
+      <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+    </div>
+  );
 };
 
 const SinglePostPage = () => {
-    const { postId } = useParams<{ postId: string }>();
-    const validPostId = postId || ""; // Ha a postId undefined, akkor üres string
+  const { postId } = useParams<{ postId: string }>();
 
-    return <SinglePost postId={validPostId} />;
+  // Biztosítjuk, hogy postId mindig string legyen
+  const validPostId = postId ?? ""; // Nullish coalescing: undefined/null esetén üres string
+
+  return <SinglePost postId={validPostId} />;
 };
 
 export default SinglePostPage;

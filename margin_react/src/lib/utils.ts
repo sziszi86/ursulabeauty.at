@@ -40,3 +40,8 @@ export const getErrorMessage = (error: unknown): string => {
 
   return message;
 };
+// utils.ts fájlban:
+export const isExpired = (date: Date): boolean => {
+  const now = new Date();
+  return date < now;
+};

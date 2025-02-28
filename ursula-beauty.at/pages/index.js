@@ -25,7 +25,7 @@ const Index = () => {
                   Natural Beaulty spa salon
                 </h1>
                 <div className='hero-btn mt-30 wow fadeInUp delay-0-4s'>
-                  <Link href='/about'>
+                  <Link legacyBehavior href='/about'>
                     <a className='theme-btn'>
                       Learn more <i className='fas fa-long-arrow-alt-right' />
                     </a>
@@ -70,7 +70,7 @@ const Index = () => {
                   <li>Professional Women Spa Service</li>
                   <li>Experience Hair Treatments</li>
                 </ul>
-                <Link href='/about'>
+                <Link legacyBehavior href='/about'>
                   <a className='theme-btn style-two'>
                     read more <i className='fas fa-long-arrow-alt-right' />
                   </a>
@@ -107,7 +107,9 @@ const Index = () => {
                     </div>
                     <div className='feature-content'>
                       <h4>
-                        <Link href='/service-details'>Clinical Treatments</Link>
+                        <Link legacyBehavior href='/service-details'>
+                          Clinical Treatments
+                        </Link>
                       </h4>
                       <span>Organic Modern Treatments</span>
                     </div>
@@ -118,7 +120,9 @@ const Index = () => {
                     </div>
                     <div className='feature-content'>
                       <h4>
-                        <Link href='/service-details'>Toxins Free</Link>
+                        <Link legacyBehavior href='/service-details'>
+                          Toxins Free
+                        </Link>
                       </h4>
                       <span>Organic Modern Treatments</span>
                     </div>
@@ -129,7 +133,9 @@ const Index = () => {
                     </div>
                     <div className='feature-content'>
                       <h4>
-                        <Link href='/service-details'>Organic Products</Link>
+                        <Link legacyBehavior href='/service-details'>
+                          Organic Products
+                        </Link>
                       </h4>
                       <span>Organic Modern Treatments</span>
                     </div>
@@ -140,7 +146,9 @@ const Index = () => {
                     </div>
                     <div className='feature-content'>
                       <h4>
-                        <Link href='/service-details'>No Side Affects</Link>
+                        <Link legacyBehavior href='/service-details'>
+                          No Side Affects
+                        </Link>
                       </h4>
                       <span>Organic Modern Treatments</span>
                     </div>
@@ -211,7 +219,7 @@ const Index = () => {
             <div className='col-lg-3 col-md-4 col-sm-6'>
               <div className='product-item wow fadeInUp delay-0-2s'>
                 <div className='image'>
-                  <Link href='/product-details'>
+                  <Link legacyBehavior href='/product-details'>
                     <a>
                       <img
                         src='assets/images/products/product-1.jpg'
@@ -228,7 +236,9 @@ const Index = () => {
                   </div>
                 </div>
                 <h5>
-                  <Link href='/product-details'>Face Cream Winter</Link>
+                  <Link legacyBehavior href='/product-details'>
+                    Face Cream Winter
+                  </Link>
                 </h5>
                 <span className='price'>Price $253.59</span>
               </div>
@@ -236,7 +246,7 @@ const Index = () => {
             <div className='col-lg-3 col-md-4 col-sm-6'>
               <div className='product-item wow fadeInUp delay-0-4s'>
                 <div className='image'>
-                  <Link href='/product-details'>
+                  <Link legacyBehavior href='/product-details'>
                     <img
                       src='assets/images/products/product-2.jpg'
                       alt='Product'
@@ -251,7 +261,9 @@ const Index = () => {
                   </div>
                 </div>
                 <h5>
-                  <Link href='/product-details'>Organic Hair Oil</Link>
+                  <Link legacyBehavior href='/product-details'>
+                    Organic Hair Oil
+                  </Link>
                 </h5>
                 <span className='price'>Price $253.59</span>
               </div>
@@ -259,7 +271,7 @@ const Index = () => {
             <div className='col-lg-3 col-md-4 col-sm-6'>
               <div className='product-item wow fadeInUp delay-0-6s'>
                 <div className='image'>
-                  <Link href='/product-details'>
+                  <Link legacyBehavior href='/product-details'>
                     <img
                       src='assets/images/products/product-3.jpg'
                       alt='Product'
@@ -274,7 +286,9 @@ const Index = () => {
                   </div>
                 </div>
                 <h5>
-                  <Link href='/product-details'>Natural Hair Colors</Link>
+                  <Link legacyBehavior href='/product-details'>
+                    Natural Hair Colors
+                  </Link>
                 </h5>
                 <span className='price'>Price $253.59</span>
               </div>
@@ -282,7 +296,7 @@ const Index = () => {
             <div className='col-lg-3 col-md-4 col-sm-6'>
               <div className='product-item wow fadeInUp delay-0-8s'>
                 <div className='image'>
-                  <Link href='/product-details'>
+                  <Link legacyBehavior href='/product-details'>
                     <img
                       src='assets/images/products/product-4.jpg'
                       alt='Product'
@@ -297,7 +311,9 @@ const Index = () => {
                   </div>
                 </div>
                 <h5>
-                  <Link href='/product-details'>Summer Face Cream</Link>
+                  <Link legacyBehavior href='/product-details'>
+                    Summer Face Cream
+                  </Link>
                 </h5>
                 <span className='price'>Price $253.59</span>
               </div>
@@ -335,7 +351,7 @@ const Index = () => {
                           Sat: 9:00 am — 1:00 am <br />
                           Sun: 9:00 am — 11:30 pm
                         </p>
-                        <Link href='/booking'>
+                        <Link legacyBehavior href='/booking'>
                           <a className='theme-btn'>
                             appointment{' '}
                             <i className='fas fa-long-arrow-alt-right' />
@@ -393,11 +409,13 @@ const Index = () => {
           <div className='category-title'>
             <span className='bg-text'>Category</span>
             <h4>
-              <Link href='/service-details'>Nail Polish</Link>
+              <Link legacyBehavior href='/service-details'>
+                Nail Polish
+              </Link>
             </h4>
           </div>
           <p>Quis autem velum reprender eoluptate velit esse</p>
-          <Link href='/service-details'>
+          <Link legacyBehavior href='/service-details'>
             <a className='read-more'>
               read more <i className='fas fa-long-arrow-alt-right' />
             </a>
@@ -409,11 +427,13 @@ const Index = () => {
           <div className='category-title'>
             <span className='bg-text'>Category</span>
             <h4>
-              <Link href='/service-details'>Brow Polish</Link>
+              <Link legacyBehavior href='/service-details'>
+                Brow Polish
+              </Link>
             </h4>
           </div>
           <p>Quis autem velum reprender eoluptate velit esse</p>
-          <Link href='/service-details'>
+          <Link legacyBehavior href='/service-details'>
             <a className='read-more'>
               read more <i className='fas fa-long-arrow-alt-right' />
             </a>
@@ -425,11 +445,13 @@ const Index = () => {
           <div className='category-title'>
             <span className='bg-text'>Category</span>
             <h4>
-              <Link href='/service-details'>Hair Dresser</Link>
+              <Link legacyBehavior href='/service-details'>
+                Hair Dresser
+              </Link>
             </h4>
           </div>
           <p>Quis autem velum reprender eoluptate velit esse</p>
-          <Link href='/service-details'>
+          <Link legacyBehavior href='/service-details'>
             <a className='read-more'>
               read more <i className='fas fa-long-arrow-alt-right' />
             </a>
@@ -441,11 +463,13 @@ const Index = () => {
           <div className='category-title'>
             <span className='bg-text'>Category</span>
             <h4>
-              <Link href='/service-details'>Foot Massage</Link>
+              <Link legacyBehavior href='/service-details'>
+                Foot Massage
+              </Link>
             </h4>
           </div>
           <p>Quis autem velum reprender eoluptate velit esse</p>
-          <Link href='/service-details'>
+          <Link legacyBehavior href='/service-details'>
             <a className='read-more'>
               read more <i className='fas fa-long-arrow-alt-right' />
             </a>
@@ -457,11 +481,13 @@ const Index = () => {
           <div className='category-title'>
             <span className='bg-text'>Category</span>
             <h4>
-              <Link href='/service-details'>Cosmetics</Link>
+              <Link legacyBehavior href='/service-details'>
+                Cosmetics
+              </Link>
             </h4>
           </div>
           <p>Quis autem velum reprender eoluptate velit esse</p>
-          <Link href='/service-details'>
+          <Link legacyBehavior href='/service-details'>
             <a className='read-more'>
               read more <i className='fas fa-long-arrow-alt-right' />
             </a>
@@ -486,7 +512,7 @@ const Index = () => {
             <div className='col-xl-4 col-md-6'>
               <div className='news-item wow fadeInUp delay-0-2s'>
                 <div className='image'>
-                  <Link href='/blog-details'>
+                  <Link legacyBehavior href='/blog-details'>
                     <img src='assets/images/news/news-1.jpg' alt='News' />
                   </Link>
                 </div>
@@ -503,7 +529,7 @@ const Index = () => {
                       </li>
                     </ul>
                     <h4>
-                      <Link href='/blog-details'>
+                      <Link legacyBehavior href='/blog-details'>
                         Smase Podcast Episode Chris Ferdinande
                       </Link>
                     </h4>
@@ -518,7 +544,7 @@ const Index = () => {
             <div className='col-xl-4 col-md-6'>
               <div className='news-item wow fadeInUp delay-0-4s'>
                 <div className='image'>
-                  <Link href='/blog-details'>
+                  <Link legacyBehavior href='/blog-details'>
                     <img src='assets/images/news/news-2.jpg' alt='News' />
                   </Link>
                 </div>
@@ -535,7 +561,7 @@ const Index = () => {
                       </li>
                     </ul>
                     <h4>
-                      <Link href='/blog-details'>
+                      <Link legacyBehavior href='/blog-details'>
                         Useful React Hooks That You Can Projects
                       </Link>
                     </h4>
@@ -549,7 +575,7 @@ const Index = () => {
             <div className='col-xl-4 col-md-6'>
               <div className='news-item wow fadeInUp delay-0-6s'>
                 <div className='image'>
-                  <Link href='/blog-details'>
+                  <Link legacyBehavior href='/blog-details'>
                     <img src='assets/images/news/news-3.jpg' alt='News' />
                   </Link>
                 </div>
@@ -566,7 +592,7 @@ const Index = () => {
                       </li>
                     </ul>
                     <h4>
-                      <Link href='/blog-details'>
+                      <Link legacyBehavior href='/blog-details'>
                         Smase Podcast Episode Chris Ferdinande
                       </Link>
                     </h4>

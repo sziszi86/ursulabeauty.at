@@ -71,7 +71,7 @@ const Menus = () => {
         </ul>
       </li>
       <li className='dropdown'>
-        <a href='#'>pages</a>
+        <a href='#'>pag</a>
         <ul>
           <About />
           <li className='dropdown'>
@@ -154,7 +154,7 @@ const DefaultHeader = ({
           <div className='header-inner d-flex align-items-center bg-white'>
             <div className='logo-outer'>
               <div className='logo'>
-                <Link href='/'>
+                <Link legacyBehavior href='/'>
                   <img
                     src='assets/images/logos/color-logo.png'
                     alt='Logo'
@@ -180,7 +180,7 @@ const DefaultHeader = ({
                     <span className='icon-bar' />
                   </button>
                   <div className='mobile-logo p-15 m-auto'>
-                    <Link href='/'>
+                    <Link legacyBehavior href='/'>
                       <img
                         src='assets/images/logos/logo.png'
                         alt='Logo'
@@ -274,7 +274,7 @@ const Header1 = ({
           <div className='header-inner d-flex align-items-center bg-white'>
             <div className='logo-outer'>
               <div className='logo'>
-                <Link href='/'>
+                <Link legacyBehavior href='/'>
                   <img
                     src='assets/images/logos/logo.png'
                     alt='Logo'
@@ -300,7 +300,7 @@ const Header1 = ({
                     <span className='icon-bar' />
                   </button>
                   <div className='mobile-logo p-15 m-auto'>
-                    <Link href='/'>
+                    <Link legacyBehavior href='/'>
                       <img
                         src='assets/images/logos/logo.png'
                         alt='Logo'
@@ -379,7 +379,7 @@ const Header2 = ({
           <div className='header-inner d-flex align-items-center'>
             <div className='logo-outer'>
               <div className='logo'>
-                <Link href='/'>
+                <Link legacyBehavior href='/'>
                   <img
                     src='assets/images/logos/white-logo.png'
                     alt='Logo'
@@ -405,7 +405,7 @@ const Header2 = ({
                     <span className='icon-bar' />
                   </button>
                   <div className='mobile-logo p-15 m-auto'>
-                    <Link href='/'>
+                    <Link legacyBehavior href='/'>
                       <img
                         src='assets/images/logos/white-logo.png'
                         alt='Logo'
@@ -483,7 +483,7 @@ const Header3 = ({
           <div className='header-inner d-flex align-items-center'>
             <div className='logo-outer'>
               <div className='logo'>
-                <Link href='/'>
+                <Link legacyBehavior href='/'>
                   <img
                     src='assets/images/logos/white-logo.png'
                     alt='Logo'
@@ -509,7 +509,7 @@ const Header3 = ({
                     <span className='icon-bar' />
                   </button>
                   <div className='mobile-logo p-15 m-auto'>
-                    <Link href='/'>
+                    <Link legacyBehavior href='/'>
                       <img
                         src='assets/images/logos/white-logo.png'
                         alt='Logo'

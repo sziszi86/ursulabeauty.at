@@ -21,7 +21,7 @@ const SectionLatestNews = () => {
             titleClasses="mb-3 text-center"
             subtitleClasses="text-md font-medium"
           >
-            Latest News
+            Kiemelt Versenyek
           </SectionTitle>
           <PostList limit={5} showPagination={false} grid="lg:grid-cols-5" />
         </motion.div>
